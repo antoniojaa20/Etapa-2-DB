@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="DB com POO Fase 1 Java/src"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/client-runtime-3.3.0.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/ec.base-3.1.7.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/ec.base-3.1.8.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/html-5.0.bv6.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/httpclient-4.5.14.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/httpcore-4.4.16.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/jquery-1.11.3.bv1.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/jquery-1.11.3.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/org.json-ld-3.1.7.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/org.json-ld-3.1.8.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/protobuf-java-3.19.4.jar"/>
+	<classpathentry kind="lib" path="DB com POO Fase 1 Java/lib/shared-3.3.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
