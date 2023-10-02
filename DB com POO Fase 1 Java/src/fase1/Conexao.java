@@ -1,30 +1,20 @@
 package fase1;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.MongoException;
 
 public class Conexao {
-	public static void main(String[] args){
-		 String driver = "com.mysql.cj.jdbc.Driver";
-		 String user = "root";
-		 String senha = "Isa29052003_Belly";
-		 String url = "jdbc:mysql://127.0.0.1:3306/moviedatabase";
+	public static void main(String[] args) {
+		String connectionString = "mongodb://localhost:27017"; //Alterar a porta de conexão conforme a do localhost
+		String databaseName = "moviedatabase";
 
-		 try{
-			 Class.forName(driver);
-			 Connection con = null;
-
-			 con = (Connection) DriverManager.getConnection(url, user, senha);
-
-			 System.out.println("Conexão realizada com sucesso.");
-
-		 }
-		 catch (ClassNotFoundException ex){
-			 System.err.print(ex.getMessage());
-		 }
-		 catch (SQLException e){
-			 System.err.print(e.getMessage());
-		 }
-	 }
+		try (MongoClient mongoClient = MongoClients.create(connectionString)) {
+			MongoDatabase database = mongoClient.getDatabase(databaseName);
+			System.out.println("Conexão com o MongoDB estabelecida com sucesso.");
+		} catch (MongoException e) {
+			System.err.println("Erro ao conectar ao MongoDB: " + e.getMessage());
+		}
+	}
 }
